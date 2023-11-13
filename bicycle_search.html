@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search_style.css">
+    <title>検索画面</title>
+</head>
+
+<div class="wrap_all">
+    <div class="wrap_header">
+        <header>
+            <div class="flex">
+                <h1>ジテンシャパーツ</h1>
+                <h1>ケンサク</h1>
+            </div>
+            <div class="flex logout">
+                <p>こんにちはユーザーさん</p>
+                <button type="button">ログアウト</button>
+            </div>
+        </header>
+    </div><!-- .wrap-header -->
+
+
+    <div class="wrap_body">
+        <body>
+            <div class="wrap_search">
+                <form action="">
+                    <table class="table_search">
+                        <tr>
+                            <th colspan="2">検索フォーム</th>
+                        </tr>
+                        <tr>
+                            <th>ID</th>
+                            <td><input type="text" name="parts_id" id="parts_id"></td>
+                        </tr>
+                        <tr>
+                            <th>商品名</th>
+                            <td><input type="text" name="parts_name" id="parts_name"></td>
+                        </tr>
+                        <tr>
+                            <th>カテゴリ</th>
+                            <td>
+                                <select name="category" id="category">
+                                    <option value="フレーム">フレーム</option>
+                                    <option value="ハンドル">ハンドル</option>
+                                    <option value="サドル">サドル</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <div class="wrap_btn">
+                        <button type="button">検索</button>
+                        <button type="reset">クリア</button>
+                    </div>
+                </form>
+            </div><!-- .wrap_search -->
+
+            <div class="wrap_list">
+                <div class="wrap_list_form">
+                    <form action="">
+                        <table class="table_list">
+                            <tr>
+                                <th>ID</th>
+                                <th>画像</th>
+                                <th>商品名</th>
+                                <th>カテゴリ</th>
+                                <th>金額</th>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td><img src="image/スクリーンショット 2023-11-14 015535.png" alt=""></td>
+                                <td>CAAD 13</td>
+                                <td>フレーム</td>
+                                <td>￥195,000</td>
+                            </tr>
+                            <tr>
+                                <td>0002</td>
+                                <td><img src="image/スクリーンショット 2023-11-14 015535.png" alt=""></td>
+                                <td>CXR1</td>
+                                <td>ホイール</td>
+                                <td>￥195,000</td>
+                            </tr>
+                            <tr>
+                                <td>0003</td>
+                                <td><img src="image/スクリーンショット 2023-11-14 015535.png" alt=""></td>
+                                <td>パワーサドル</td>
+                                <td>サドル</td>
+                                <td>￥1,950</td>
+                            </tr>
+                        </table>
+                        <div class="wrap_btn">
+                            <button>新規登録</button>
+                            <button>更新</button>
+                            <button>削除</button>
+                        </div>
+                    </form>
+                </div><!-- .wrap_list_form-->
+            </div><!-- .wrap_list-->
+        </body>
+    </div><!-- .wrap-body -->
+</div><!-- .wrap_all -->
+
+</html>

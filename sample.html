@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function actionSwitch() {
+            let form = document.forms[0];
+            let button = event.target;
+            form.action = button.getAttribute("da");
+
+            let tx = form.parts_id;
+            form.setAttribute("str", tx);
+            form.submit();
+        }
+
+        function checkValue() {
+            return true;
+        }
+
+        function henkan() {
+            window.moji.textContent = "かきくけこ";
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="henkan" onclick="henkan()">文字変換</button>
+    <p id="moji">あいうえお</p>
+    <form action="#" method="get">
+        <input type="text" id="parts_id">
+        <input type="button" name="update" id="update" value="update" onclick="actionSwitch()" da="update.html">
+        <input type="button" name="register" id="register" value="register" onclick="actionSwitch()" da="register.html">
+    </form>
+</body>
+
+</html>
